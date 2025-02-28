@@ -19,7 +19,8 @@ import { addToCalendar } from "./addToCalendar.js";
 
   console.log("Fetched Timetables: ", timetable);
   const formattedTimetable = timetable.map((event) => ({
-    summary: event.MODID,
+    summary: event.MODULE_NAME,
+    // summary: event.MODID,
     start: {
       dateTime: event.TIME_FROM_ISO,
       timeZone: "Asia/Kuala_Lumpur",
